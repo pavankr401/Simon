@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="styles.css">   
+
+    <audio id="clip-1">
+      <source src="./Audio/simonSound1.mp3"></source>
+    </audio>
+    <audio id="clip-2">
+      <source src="./Audio/simonSound2.mp3"></source>
+    </audio>
+    <audio id="clip-3">
+      <source src="./Audio/simonSound3.mp3"></source>
+    </audio>
+    <audio id="clip-4">
+      <source src="./Audio/simonSound4.mp3"></source>
+    </audio>
+  </head>
+  <body>
+    <div id="outer-circle">
+      <div id="green-light" class="rect"></div>
+      <div id="red-light" class="rect"></div>
+      <div id="yellow-light" class="rect"></div>
+      <div id="blue-light" class="rect"></div>
+      <div id="inner-circle">
+        <h1>SIMON</h1>
+        <button id="start-btn">Start</button>
+        <div id="power">
+          <input type="checkbox" class="toggle" id="power-check">
+          <label>POWER</label>
+        </div>
+        <div id="strict">
+          <input type="checkbox" class="toggle" id="strict-check">
+          <label>STRICT</label>
+        </div>
+        <div id="display">
+          <div></div>
+          <label>COUNT</label>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
